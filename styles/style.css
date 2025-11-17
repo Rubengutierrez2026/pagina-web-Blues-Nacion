@@ -24,6 +24,13 @@ h1{
     text-decoration: underline;
     color: yellow;
 }
+.h2-estil{
+font-family: "Cairo", sans-serif;
+color: yellow;
+font-size: 25px;
+text-decoration: underline;
+}
+
 p{
     color:rgb(196, 248, 8); 
     font-size: 24px;
@@ -32,10 +39,19 @@ p{
     font-weight: 600;
     
 }
-.parra-historia{
-    display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     margin-top: 50px;
+.p-hist{
+     display: grid;
+     grid-template-columns:1fr 1fr 1fr;
+     justify-items: left;
+
+     
+     
+}
+.imghist{
+    display:inline-block;
+    width: 40rem;
+    height: 25rem;
+    margin: 3rem;
 }
 
 .footer-p {
