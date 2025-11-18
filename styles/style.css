@@ -5,7 +5,7 @@
 body{
     font-family: "Cairo", sans-serif;
     background-color: rgb(22, 21, 17);
-    
+
 }
 h1{
     /* propiedad: valor */
@@ -29,13 +29,12 @@ font-family: "Cairo", sans-serif;
 color: yellow;
 font-size: 20px;
 text-decoration: underline;
-margin-top: 20px;
-margin-bottom: 20px;
+margin: 20px;
 }
 
 p{
     color:rgb(196, 248, 8); 
-    font-size: 24px;
+    font-size: 20px;
     text-align: start;
     font-style: italic;
     font-weight: 600;
@@ -43,21 +42,21 @@ p{
     
 }
 .p-hist{
-     display: grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(0,1fr);
-    min-height: 180px;
+    grid-template-rows: repeat(1fr);
+    min-height: 500px;
     align-items: flex-start; 
     
-
 }
+
 .imghist{
     display:inline-block;
     width: 40rem;
     height: 25rem;
-    margin: 3rem;
+    margin-top: 5px;
     width: 100%;  /* móviles */
-    height: auto;
+    height: 300px;
 
 
 }
@@ -111,7 +110,7 @@ nav ul li{
 .imglogo{
     width: 170px;
     margin-top: 30px;
-margin: 10 10;
+    margin: 10 10;
     background-image: url(../assets/img/Img\ fondo.png);
     background-color: black;
     
@@ -177,6 +176,33 @@ ease-in-out;
     background-color: yellow;
 }
 
+/* Trabajando media queries no sale/repasar  */
+@media (max-width: 400px) {
+ body{
+        text-align: center;   
+    } 
 
+ .imglogo{
+    align-content: flex-start; 
+ }
+.fondo{
+    align-items: flex-start;
+    width: 300px;
+    height: 250px
+}
+.p-hist{
+    grid-template-columns: 100px
 
+}  
+.img-robert{
+   background-position: 20px;
+    width: 200px;
+    height: 150px;
+} 
+.imghist{
+    width: 200px;
+    height: 150px;
+}
+
+}
 
